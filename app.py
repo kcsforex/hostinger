@@ -30,4 +30,5 @@ app.layout = html.Div([
 
 if __name__ == '__main__':
     # This part only runs during local development
-    app.run_server(debug=True, port=8050)
+
+    app.run(debug=True, port=8050)
