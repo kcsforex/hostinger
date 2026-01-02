@@ -32,7 +32,7 @@ fig = px.bar(df, x="Asset", y="Price", color="Signal", title="Bot Status")
 
 # 4. Define the Layout
 app.layout = html.Div([
-    html.H1("AI Trading Bot Dashboard"),
+    html.H1("AI Trading Bot Dashboard Test v1"),
     html.Div("Real-time performance from KVM 2 Server"),
     dcc.Graph(figure=fig),
     
@@ -43,3 +43,4 @@ app.layout = html.Div([
 if __name__ == '__main__':
     # Default to 8050 for local testing
     app.run(debug=False, host='0.0.0.0', port=8050)
+
